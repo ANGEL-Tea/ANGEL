@@ -5963,7 +5963,7 @@ database:set(bot_id.."ANGEL:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "⌔︙تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."ANGEL:Name:Bot") or "رافين") then
+if text == (database:get(bot_id.."ANGEL:Name:Bot") or "اينجل") then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -5973,7 +5973,7 @@ send(msg.chat_id_, msg.id_,'⌔︙عـليك الاشـتࢪاك في قنـاة
 end
 return false
 end
-Namebot = (database:get(bot_id.."ANGEL:Name:Bot") or "رافين")
+Namebot = (database:get(bot_id.."ANGEL:Name:Bot") or "اينجل")
 local namebot = {
 "عمري فداك "..Namebot.. " كول حب ",
 "كول حبيبي ؟ اني "..Namebot,
@@ -5992,7 +5992,7 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."ANGEL:Name:Bot") or "كاريبو")
+Namebot = (database:get(bot_id.."ANGEL:Name:Bot") or "اينجل")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" or text == "حذف اسم البوت" then 
