@@ -7820,7 +7820,7 @@ Text = [[
 ⌔︙ م4 » لعرض اوامر المنشئين
 ⌔︙ م5 » لعرض اوامر المطورين
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/LHFAX)
+[⌔︙Ch Source](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -7867,7 +7867,7 @@ Text = [[
 ⌔︙الكلايش
 ⌔︙السيلفي
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/LHFAX)
+[⌔︙Ch Source](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -7939,7 +7939,7 @@ Text = [[
 ⌔︙مسح الصلاحيات
 ⌔︙مسح الرابط
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/LHFAX)
+[⌔︙Ch Source](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -7986,7 +7986,7 @@ Text = [[
 ⌔︙تفعيل/تعطيل اوامر التحشيش
 ⌔︙تفعيل/تعطيل الرابط/جلب الرابط
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/LHFAX)
+[⌔︙Ch Source](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8022,7 +8022,7 @@ Text = [[
 ⌔︙اضف رسائل + العدد بالرد
 ⌔︙اضف مجوهرات + العدد بالرد
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/LHFAX)
+[⌔︙Ch Source](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8072,7 +8072,7 @@ Text = [[
 ⌔︙رفع/تنزيل منشئ اساسي
 ⌔︙مسح المنشئين الاساسين
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/LHFAX)
+[⌔︙Ch Source](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
