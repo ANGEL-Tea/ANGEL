@@ -7781,7 +7781,7 @@ Text = [[
 *- ANGEL TEAM .*
  — — — — — — — — — 
      
-[⌔︙ ANGEL 𝖲𝗈𝗎𝗋𝖼𝖾  .](https://t.me/LHFAX)
+[⌔︙ ANGEL 𝖲𝗈𝗎𝗋𝖼𝖾  .](https://t.me/FxxFx)
      
 [⌔︙ CH ANGEL .](https://t.me/D6D6I)   
      
