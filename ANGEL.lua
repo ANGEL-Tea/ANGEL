@@ -7776,14 +7776,14 @@ dofile("ANGEL.lua")
 send(msg.chat_id_, msg.id_, "⌔︙تم التحديث")
 end
 
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
+if text == 'السورس' or thttps://t.me/LHFAXext == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 Text = [[
 *- ANGEL TEAM .*
  — — — — — — — — — 
      
-[⌔︙ ANGEL 𝖲𝗈𝗎𝗋𝖼𝖾  .](https://t.me/nodals)
+[⌔︙ ANGEL 𝖲𝗈𝗎𝗋𝖼𝖾  .](https://t.me/LHFAX)
      
-[⌔︙ ToolS ANGEL .](https://t.me/D6D6I)   
+[⌔︙ CH ANGEL .](https://t.me/D6D6I)   
      
 ]]
 send(msg.chat_id_, msg.id_,Text)
@@ -7820,7 +7820,7 @@ Text = [[
 ⌔︙ م4 » لعرض اوامر المنشئين
 ⌔︙ م5 » لعرض اوامر المطورين
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/nodals)
+[⌔︙Ch Source](t.me/LHFAX)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -7867,7 +7867,7 @@ Text = [[
 ⌔︙الكلايش
 ⌔︙السيلفي
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/nodals)
+[⌔︙Ch Source](t.me/LHFAX)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -7939,7 +7939,7 @@ Text = [[
 ⌔︙مسح الصلاحيات
 ⌔︙مسح الرابط
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/nodals)
+[⌔︙Ch Source](t.me/LHFAX)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -7986,7 +7986,7 @@ Text = [[
 ⌔︙تفعيل/تعطيل اوامر التحشيش
 ⌔︙تفعيل/تعطيل الرابط/جلب الرابط
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/nodals)
+[⌔︙Ch Source](t.me/LHFAX)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8022,7 +8022,7 @@ Text = [[
 ⌔︙اضف رسائل + العدد بالرد
 ⌔︙اضف مجوهرات + العدد بالرد
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/nodals)
+[⌔︙Ch Source](t.me/LHFAX)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8072,7 +8072,7 @@ Text = [[
 ⌔︙رفع/تنزيل منشئ اساسي
 ⌔︙مسح المنشئين الاساسين
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/nodals)
+[⌔︙Ch Source](t.me/LHFAX)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
