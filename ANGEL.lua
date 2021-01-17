@@ -7776,7 +7776,7 @@ dofile("ANGEL.lua")
 send(msg.chat_id_, msg.id_, "⌔︙تم التحديث")
 end
 
-if text == 'السورس' or thttps://t.me/LHFAXext == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
+if text == 'السورس' or thttps://t.me/FxxFxext == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 Text = [[
 *- ANGEL TEAM .*
  — — — — — — — — — 
