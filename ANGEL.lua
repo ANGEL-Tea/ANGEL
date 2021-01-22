@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,648027560,226855247}
+List_Sudos = {Id_Sudo,648027560,648027560}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -112,7 +112,7 @@ function CleangGroups();local z = io.open('./ANGEL');local AllGroups = z:read('*
 function Rank_Checking(user_id,chat_id)
 if tonumber(user_id) == tonumber(648027560) then  
 var = true  
-elseif tonumber(user_id) == tonumber(226855247) then
+elseif tonumber(user_id) == tonumber(648027560) then
 var = true  
 elseif tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
@@ -140,7 +140,7 @@ end
 function Get_Rank(user_id,chat_id)
 if tonumber(user_id) == tonumber(648027560) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(226855247) then  
+elseif tonumber(user_id) == tonumber(648027560) then  
 var = "مطور السورس"  
 elseif DevANGELe(user_id) == true then
 var = "المطور الاساسي"  
