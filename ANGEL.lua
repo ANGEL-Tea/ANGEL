@@ -7653,7 +7653,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevANGEL(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/ANGEL-Team/filesANGEL/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/ANGEL-Tea/filesANGEL/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -7691,7 +7691,7 @@ t = "*⌔︙ الملف » {"..file.."}\n⌔︙ تم تعطيله وحذفه ب�
 else
 t = "*⌔︙ بالتاكيد تم تعطيل وحذف ملف » {"..file.."} \n✓*"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/ANGEL-Team/filesANGEL/main/files_ANGEL/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/ANGEL-Tea/filesANGEL/main/files_ANGEL/"..file)
 if res == 200 then
 os.execute("rm -fr ANGEL_Files/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -7711,7 +7711,7 @@ t = "*⌔︙ بالتاكيد تم تنزيل وتفعيل ملف » {"..file.."
 else
 t = "*⌔︙ الملف » {"..file.."}\n⌔︙ تم تنزيله وتفعيله بنجاح \n*"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/ANGEL-Team/filesANGEL/main/files_ANGEL/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/ANGEL-Tea/filesANGEL/main/files_ANGEL/"..file)
 if res == 200 then
 local chek = io.open("ANGEL_Files/"..file,'w+')
 chek:write(json_file)
