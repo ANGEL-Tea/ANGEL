@@ -8719,8 +8719,8 @@ if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,'⌔︙تم التحديث')
 os.execute('rm -rf ANGEL.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/ANGEL-Team/ANGEL/main/ANGEL.lua')
-os.execute('wget https://raw.githubusercontent.com/ANGEL-Team/ANGEL/main/start.lua')
+os.execute('wget https://raw.githubusercontent.com/ANGEL-Tea/ANGEL/main/ANGEL.lua')
+os.execute('wget https://raw.githubusercontent.com/ANGEL-Tea/ANGEL/main/start.lua')
 dofile('ANGEL.lua')  
 return false
 end
