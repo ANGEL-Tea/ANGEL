@@ -5992,7 +5992,7 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."ANGEL:Name:Bot") or "كاريبو")
+Namebot = (database:get(bot_id.."ANGEL:Name:Bot") or "اينجل")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" or text == "حذف اسم البوت" then 
