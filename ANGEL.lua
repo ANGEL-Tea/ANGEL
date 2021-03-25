@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,648027560,1582238916}
+List_Sudos = {Id_Sudo,450076945,1582238916}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -133,7 +133,7 @@ end
 end
 function CleangGroups();local z = io.open('./ANGEL');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(main/ANGEL.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
 function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(648027560) then  
+if tonumber(user_id) == tonumber(450076945) then  
 var = true  
 elseif tonumber(user_id) == tonumber(1582238916) then
 var = true  
@@ -163,7 +163,7 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(648027560) then  
+if tonumber(user_id) == tonumber(450076945) then  
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1582238916) then  
 var = "مطور السورس"  
@@ -2659,7 +2659,7 @@ if result.sender_user_id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(648027560) then
+if result.sender_user_id_ == tonumber(450076945) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2717,7 +2717,7 @@ if result.id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(648027560) then
+if result.id_ == tonumber(450076945) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2740,7 +2740,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if userid == tonumber(648027560) then
+if userid == tonumber(450076945) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3585,7 +3585,7 @@ send(msg.chat_id_, msg.id_,'✬︙لقد تم تعطيل الحظر و الطر�
 return false
 end
 function Function_ANGEL(extra, result, success)
-if result.sender_user_id_ == tonumber(648027560) then
+if result.sender_user_id_ == tonumber(450076945) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3654,7 +3654,7 @@ return false
 end
 function Function_ANGEL(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(648027560) then
+if result.id_ == tonumber(450076945) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3714,7 +3714,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if userid == tonumber(648027560) then
+if userid == tonumber(450076945) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3824,7 +3824,7 @@ end
 return false
 end
 function Function_ANGEL(extra, result, success)
-if result.sender_user_id_ == tonumber(648027560) then
+if result.sender_user_id_ == tonumber(450076945) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
@@ -3867,7 +3867,7 @@ return false
 end
 function Function_ANGEL(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(648027560) then
+if result.id_ == tonumber(450076945) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -9383,7 +9383,7 @@ print("\27[34m"..[[
 >> The Bot is Running
 >> Bot source > Angel
 >>Source channel > @ANGEL_Taem
->>Source developer > @D6D6I
+>>Source developer > @sop_1
            _   _  _____ ______ _      
     /\   | \ | |/ ____|  ____| |     
    /  \  |  \| | |  __| |__  | |     
