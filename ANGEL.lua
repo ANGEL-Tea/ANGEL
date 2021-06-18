@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,648027560,648027560}
+List_Sudos = {Id_Sudo,648027560,1615764792}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -135,7 +135,7 @@ function CleangGroups();local z = io.open('./ANGEL');local AllGroups = z:read('*
 function Rank_Checking(user_id,chat_id)
 if tonumber(user_id) == tonumber(648027560) then  
 var = true  
-elseif tonumber(user_id) == tonumber(648027560) then
+elseif tonumber(user_id) == tonumber(1615764792) then
 var = true  
 elseif tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
@@ -165,7 +165,7 @@ end
 function Get_Rank(user_id,chat_id)
 if tonumber(user_id) == tonumber(648027560) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(648027560) then  
+elseif tonumber(user_id) == tonumber(1615764792) then  
 var = "مطور السورس"  
 elseif DevANGELe(user_id) == true then
 var = "المطور الاساسي"  
@@ -455,9 +455,9 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "ANGEL_Taem")
-local NameUser = "[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
+local UserName = (data.username_ or "FxxFx")
+local NameUser = "[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUserr = "[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "lock" then
 send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n— — — — — — — — —\n✬︙تم تنفيذ الامر بخاصيه ( المسح )\n")
 return false
@@ -2659,11 +2659,11 @@ if result.sender_user_id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(450076945) then
+if result.sender_user_id_ == tonumber(648027560) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1582238916) then
+if result.sender_user_id_ == tonumber(1615764792) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2717,11 +2717,11 @@ if result.id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(450076945) then
+if result.id_ == tonumber(648027560) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if result.id_ == tonumber(1582238916) then
+if result.id_ == tonumber(1615764792) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2740,11 +2740,11 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if userid == tonumber(450076945) then
+if userid == tonumber(648027560) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if userid == tonumber(1582238916) then
+if userid == tonumber(1615764792) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3439,19 +3439,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local ANGELrt = database:get(bot_id.."ANGEL:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if ANGELrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "ANGEL_Taem")..")".."\n✬︙تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FxxFx")..")".."\n✬︙تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
 database:sadd(bot_id.."ANGEL:Special:User"..msg.chat_id_,result.sender_user_id_)  
 elseif ANGELrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "ANGEL_Taem")..")".."\n✬︙تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FxxFx")..")".."\n✬︙تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
 database:sadd(bot_id.."ANGEL:Mod:User"..msg.chat_id_,result.sender_user_id_)  
 elseif ANGELrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "ANGEL_Taem")..")".."\n✬︙تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FxxFx")..")".."\n✬︙تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
 database:sadd(bot_id.."ANGEL:Manager"..msg.chat_id_,result.sender_user_id_)  
 elseif ANGELrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "ANGEL_Taem")..")".."\n✬︙تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FxxFx")..")".."\n✬︙تم رفعه "..RTPA.." هنا\n")
 end
 end,nil)   
 end   
@@ -3474,19 +3474,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local ANGELrt = database:get(bot_id.."ANGEL:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if ANGELrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "ANGEL_Taem")..")".."\n✬︙تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FxxFx")..")".."\n✬︙تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."ANGEL:Special:User"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif ANGELrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "ANGEL_Taem")..")".."\n✬︙تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FxxFx")..")".."\n✬︙تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."ANGEL:Mod:User"..msg.chat_id_,result.sender_user_id_) 
 database:del(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif ANGELrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "ANGEL_Taem")..")".."\n✬︙تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FxxFx")..")".."\n✬︙تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."ANGEL:Manager"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif ANGELrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "ANGEL_Taem")..")".."\n✬︙تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FxxFx")..")".."\n✬︙تم تنزيله من "..RTPA.." هنا\n")  
 end
 end,nil)   
 end   
@@ -3509,19 +3509,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local ANGELrt = database:get(bot_id.."ANGEL:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if ANGELrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "ANGEL_Taem")..")".."\n✬︙تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FxxFx")..")".."\n✬︙تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."ANGEL:Special:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif ANGELrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "ANGEL_Taem")..")".."\n✬︙تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FxxFx")..")".."\n✬︙تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."ANGEL:Mod:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif ANGELrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "ANGEL_Taem")..")".."\n✬︙تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FxxFx")..")".."\n✬︙تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."ANGEL:Manager"..msg.chat_id_,result.id_)  
 database:set(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif ANGELrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "ANGEL_Taem")..")".."\n✬︙تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FxxFx")..")".."\n✬︙تم رفعه "..text1[2].." هنا")   
 end
 else
 info = "✬︙المعرف غلط"
@@ -3547,19 +3547,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local ANGELrt = database:get(bot_id.."ANGEL:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if ANGELrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "ANGEL_Taem")..")".."\n✬︙تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FxxFx")..")".."\n✬︙تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."ANGEL:Special:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif ANGELrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "ANGEL_Taem")..")".."\n✬︙تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FxxFx")..")".."\n✬︙تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."ANGEL:Mod:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif ANGELrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "ANGEL_Taem")..")".."\n✬︙تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FxxFx")..")".."\n✬︙تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."ANGEL:Manager"..msg.chat_id_,result.id_)  
 database:del(bot_id.."ANGEL:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif ANGELrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/ANGEL_Taem)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "ANGEL_Taem")..")".."\n✬︙تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Angel 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FxxFx)\n — — — — — — — — —\n✬︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FxxFx")..")".."\n✬︙تم تنريله من "..text1[2].." هنا")   
 end
 else
 info = "✬︙المعرف غلط"
@@ -3585,11 +3585,11 @@ send(msg.chat_id_, msg.id_,'✬︙لقد تم تعطيل الحظر و الطر�
 return false
 end
 function Function_ANGEL(extra, result, success)
-if result.sender_user_id_ == tonumber(450076945) then
+if result.sender_user_id_ == tonumber(648027560) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1582238916) then
+if result.sender_user_id_ == tonumber(1615764792) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3654,7 +3654,7 @@ return false
 end
 function Function_ANGEL(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(450076945) then
+if result.id_ == tonumber(648027560) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3662,7 +3662,7 @@ if result.id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if result.id_ == tonumber(1582238916) then
+if result.id_ == tonumber(1615764792) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3714,11 +3714,11 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if userid == tonumber(450076945) then
+if userid == tonumber(648027560) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if userid == tonumber(1582238916) then
+if userid == tonumber(1615764792) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3824,11 +3824,11 @@ end
 return false
 end
 function Function_ANGEL(extra, result, success)
-if result.sender_user_id_ == tonumber(450076945) then
+if result.sender_user_id_ == tonumber(648027560) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1582238916) then
+if result.sender_user_id_ == tonumber(1615764792) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
@@ -3867,7 +3867,7 @@ return false
 end
 function Function_ANGEL(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(450076945) then
+if result.id_ == tonumber(648027560) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3899,7 +3899,7 @@ end
 return false
 end
 local userid = text:match("^كتم (%d+)$")
-if userid == tonumber(1582238916) then
+if userid == tonumber(1615764792) then
 send(msg.chat_id_, msg.id_, "✬︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -7774,7 +7774,7 @@ if audios.Info == true then
 local Text ='✬︙تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- Angel TeAM .',url="t.me/ANGEL_Taem"}},
+{{text = '- Angel TeAM .',url="t.me/FxxFx"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8108,9 +8108,9 @@ Text = [[
 *- 𝔸ℕ𝔾𝔼𝕃 𝕋𝔼𝔸𝕄 .*
  — — — — — — — — — 
      
-[✬︙ 𝖺𝗇𝗀𝖾𝗅 𝗌𝗈𝗎𝗋𝖼𝖾  .](http://t.me/ANGEL_Taem)
+[✬︙ 𝖺𝗇𝗀𝖾𝗅 𝗌𝗈𝗎𝗋𝖼𝖾  .](http://t.me/FxxFx)
        
-[✬︙ 𝚝𝚆𝚂𝙻 𝚂𝚘𝚞𝚛𝚌𝚎 𝙰𝚗𝚐𝚎𝚕.](http://t.me/TwSLAngelBot)
+[✬︙ 𝚝𝚆𝚂𝙻 𝚂𝚘𝚞𝚛𝚌𝚎](http://t.me/d6d6i)
      
 ]]
 send(msg.chat_id_, msg.id_,Text)
@@ -8147,7 +8147,7 @@ Text = [[
 ✬︙ م4 -› لعرض اوامر المنشئين
 ✬︙ م5 -› لعرض اوامر المطورين
  — — — — — — — — — 
-[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/ANGEL_Taem)
+[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8194,7 +8194,7 @@ Text = [[
 ✬︙الكلايش
 ✬︙السيلفي
  — — — — — — — — — 
-[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/ANGEL_Taem)
+[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8266,7 +8266,7 @@ Text = [[
 ✬︙مسح الصلاحيات
 ✬︙مسح الرابط
  — — — — — — — — — 
-[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/ANGEL_Taem)
+[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8313,7 +8313,7 @@ Text = [[
 ✬︙تفعيل/تعطيل اوامر التحشيش
 ✬︙تفعيل/تعطيل الرابط/جلب الرابط
  — — — — — — — — — 
-[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/ANGEL_Taem)
+[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8349,7 +8349,7 @@ Text = [[
 ✬︙اضف رسائل + العدد بالرد
 ✬︙اضف مجوهرات + العدد بالرد
  — — — — — — — — — 
-[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/ANGEL_Taem)
+[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8399,7 +8399,7 @@ Text = [[
 ✬︙رفع/تنزيل منشئ اساسي
 ✬︙مسح المنشئين الاساسين
  — — — — — — — — — 
-[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/ANGEL_Taem)
+[✬︙𝐜𝐡 𝐬𝐨𝐮𝐫𝐜𝐞](t.me/FxxFx)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9382,8 +9382,8 @@ if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
 print("\27[34m"..[[
 >> The Bot is Running
 >> Bot source > Angel
->>Source channel > @ANGEL_Taem
->>Source developer > @sop_1
+>>Source channel > @FxxFx
+>>Source developer > @d6d6i
            _   _  _____ ______ _      
     /\   | \ | |/ ____|  ____| |     
    /  \  |  \| | |  __| |__  | |     
