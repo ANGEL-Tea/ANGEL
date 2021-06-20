@@ -2783,79 +2783,7 @@ database:srem(bot_id.."ANGEL:GBan:User", userid)
 Reply_Status(msg,userid,"reply","✬︙تم الغاء حظره عام من المجموعات")  
 return false
 end
-if text == "ترتيب الاوامر" and Constructor(msg) then
 
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"ا")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"م")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"اد")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":مد","رفع مدير")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"مد")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"من")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"اس")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"مط")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":ثانوي","رفع مطور ثانوي")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"ثانوي")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"تك")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":ر","الرابط")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"ر")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":رر","ردود المدير")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"رر")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":،،","مسح المكتومين")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"،،")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"رد")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":سح","مسح سحكاتي")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"سح")
-
-ANGEL:set(David.."Set:Cmd:Group:New1"..msg.chat_id_..":رس","مسح رسائلي")
-
-ANGEL:sadd(David.."List:Cmd:Group:New"..msg.chat_id_,"رس")
-
-    send(msg.chat_id_, msg.id_,"✬︙تم ترتيب الاوامر بالشكل التالي ~\n- ايدي - ا .\n- رفع مميز - م .\n-رفع ادمن - اد .\n- رفع مدير - مد . \n- رفع منشى - من . \n- رفع منشئ الاساسي - اس  .\n- رفع مطور - مط .\n-رفع مطور ثانوي - ثانوي .\n- تنزيل الكل - تك .\n- تعطيل الايدي بالصوره - تعط .\n- تفعيل الايدي بالصوره - تفع .\n- الرابط - ر .\n- ردود المدير - رر .\n- مسح المكتومين - ،، .\n- اضف رد - رد .\n- مسح سحكاتي - سح .\n- مسح رسائلي - رس .")  
-
-    end
 if text == ("اضف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and DevANGEL(msg) then
 function Function_ANGEL(extra, result, success)
 database:sadd(bot_id.."ANGEL:Sudo:User", result.sender_user_id_)
