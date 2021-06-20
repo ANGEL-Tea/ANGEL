@@ -8572,6 +8572,103 @@ end,nil)
 end,nil) 
 end,nil)
 end
+$json = json_decode(file_get_contents("kit.json"),true);
+$kitok = $json["kitok"];
+$kitdel = $json["kitdel"];
+$kit = $json["kit"];
+if($text == "اضف كت" and $from_id == $sudo){
+$json["kitok"] = "$from_id";
+file_put_contents("kit.json",json_encode($json));
+bot('sendMessage', [
+'chat_id' =>$chat_id,
+'parse_mode' =>"markdown", 
+'text' =>"*⌔︙ارسل السؤال الان*",'reply_to_message_id'=>$message->message_id, 
+]);
+}
+if($text != "اضف كت" and $kitok == $from_id){
+$json["kit"][] = "$text";
+bot('sendMessage', [
+'chat_id' =>$chat_id,
+'parse_mode' =>"markdown", 
+'text' =>"*⌔︙تم حفظ السؤال في قائمه ( كت تويت )
+⌔︙السؤال : $text *",'reply_to_message_id'=>$message->message_id, 
+]);
+unset($json["kitok"]);
+file_put_contents("kit.json",json_encode($json)); 
+}
+
+if($text == "حذف كت" and $from_id == $sudo){
+$json["kitdel"] = "$from_id";
+file_put_contents("kit.json",json_encode($json));
+bot('sendMessage', [
+'chat_id' =>$chat_id,
+'parse_mode' =>"markdown", 
+'text' =>"*⌔︙ارسل السؤال الان لحذفه*",'reply_to_message_id'=>$message->message_id, 
+]);
+}
+
+if($text != "حذف كت" and $kitdel == $from_id and in_array($text,$kit)){
+$setwit = array_search("$text", $json["kit"]);
+bot('sendMessage', [
+'chat_id' =>$chat_id,
+'parse_mode' =>"markdown", 
+'text' =>"*⌔︙تم حذف السؤال من قائمه ( كت تويت )
+⌔︙السؤال : $text *",'reply_to_message_id'=>$message->message_id, 
+]);
+unset($json["kitdel"]);
+unset($json["kit"][$setwit]);
+file_put_contents("kit.json",json_encode($json)); 
+}
+
+if($text != "حذف كت" and $kitdel == $from_id and !in_array($text,$kit)){
+bot('sendMessage', [
+'chat_id' =>$chat_id,
+'parse_mode' =>"markdown", 
+'text' =>"*⌔︙هذا السؤال لا يوجد في قائمة ( كت تويت ) *",'reply_to_message_id'=>$message->message_id, 
+]);
+unset($json["kitdel"]);
+file_put_contents("kit.json",json_encode($json)); 
+}
+
+
+
+$twit = array_rand($kit, 1);
+$kit = $kit[$twit] ;
+if($kit != null){
+if($text == "كت" or $text == "تويت" or $text == "كت تويت"){
+bot('sendMessage', [
+'chat_id' =>$chat_id,
+'parse_mode' =>"markdown", 
+'text' =>"*⌔︙$kit *",'reply_to_message_id'=>$message->message_id, 
+]);
+}} 
+$kit = $json["kit"];
+if($kit == null){
+if($text == "كت" or $text == "تويت" or $text == "كت تويت"){
+bot('sendMessage', [
+'chat_id' =>$chat_id,
+'parse_mode' =>"markdown", 
+'text' =>"*⌔︙لم تتم اضافة اسئلة في قائمة ( كت تويت ) *",'reply_to_message_id'=>$message->message_id, 
+]);
+}}
+$ctwit = count($json["kit"]);
+if($text == "عدد الاسئله"){
+bot('sendMessage', [
+'chat_id' =>$chat_id,
+'parse_mode' =>"markdown", 
+'text' =>"*⌔︙تم اضافة $ctwit سؤال في قائمة ( كت تويت ) *",'reply_to_message_id'=>$message->message_id, 
+]);
+}
+
+if($text == "مسح الاسئله"){
+bot('sendMessage', [
+'chat_id' =>$chat_id,
+'parse_mode' =>"markdown", 
+'text' =>"*⌔︙تم مسح الاسئله من قائمة ( كت تويت ) *",'reply_to_message_id'=>$message->message_id, 
+]);
+unset($json["kit"]);
+file_put_contents("kit.json",json_encode($json));
+}		
 
 if Chat_Type == 'UserBot' then
 if text == '/start' then  
