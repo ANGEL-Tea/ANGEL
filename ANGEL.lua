@@ -5248,6 +5248,23 @@ database:del(bot_id.."ANGEL:Comd:New"..msg.chat_id_..""..msg.sender_user_id_)
 return false  
 end 
 end
+if Admin(msg) then
+if text == "@all" and ChCheck(msg) then
+function TagAll(dp1,dp2)
+local text = "↯︙وينكم يالربع \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+i = 0
+for k, v in pairs(dp2.members_) do
+i = i + 1
+if DevRio:get(ANGEL..'Save:UserName'..v.user_id_) then
+text = text..""..i.."~ : [@"..DevRio:get(ANGEL..'Save:UserName'..v.user_id_).."]\n"
+else
+text = text..""..i.."~ : "..v.user_id_.."\n"
+end
+end 
+Dev_Rio(msg.chat_id_, msg.id_, 1, text, 1, 'md')
+end
+tdcli_function({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID, offset_ = 0,limit_ = 200000},TagAll,nil)
+end			
 
 if text and text:match("^تغير رد المطور (.*)$") and Owner(msg) then
 local Teext = text:match("^تغير رد المطور (.*)$") 
