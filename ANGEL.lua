@@ -4929,6 +4929,7 @@ send(msg.chat_id_, msg.id_,'✬︙عـليك الاشـتࢪاك في قنـاة
 end
 return false
 end
+end				
 if text == "ترتيب الاوامر" and Constructor(msg) then
 database:set(bot_id.."ANGEL:Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
 database:sadd(bot_id.."ANGEL:List:Cmd:Group:New"..msg.chat_id_,"ا")
