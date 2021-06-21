@@ -5812,24 +5812,62 @@ end
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_ANGEL, nil)
 end
-if text == "تاك للكل" and Addictive(msg) then
-if AddChannel(msg.sender_user_id_) == false then
-local textchuser = database:get(bot_id..'text:ch:user')
-if textchuser then
-send(msg.chat_id_, msg.id_,'['..textchuser..']')
+if text == "تاك للكل" and ChCheck(msg) then
+
+function TagAll(dp1,dp2)
+
+local text = "↯︙وينكم يالربع \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+
+i = 0
+
+for k, v in pairs(dp2.members_) do
+
+i = i + 1
+
+if database:get(ANGEL..'Save:UserName'..v.user_id_) then
+
+text = text..""..i.."~ : [@"..database:get(ANGEL..'Save:UserName'..v.user_id_).."]\n"
+
 else
-send(msg.chat_id_, msg.id_,'✬︙عـليك الاشـتࢪاك في قنـاة البـوت اولآ . \n ✬︙قنـاة البـوت ←  ['..database:get(bot_id..'add:ch:username')..']')
+
+text = text..""..i.."~ : "..v.user_id_.."\n"
+
 end
-return false
+
+end 
+
+(msg.chat_id_, msg.id_, 1, text, 1, 'md')
+
 end
-tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,taha)
-local t = "\n✬︙ قائمة الاعضاء \n — — — — — — — — — \n"
-x = 0
-local list = taha.members_
-for k, v in pairs(list) do
-x = x + 1
-if database:get(bot_id.."ANGEL:User:Name"..v.user_id_) then
-t = t.."✬︙"..x.."︙[@"..database:get(bot_id.."ANGEL:User:Name"..v.user_id_).."]\n"
+
+tdcli_function({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID, offset_ = 0,limit_ = 200000},TagAll,nil)
+
+end
+
+--     UbEr TEAM    --
+
+if text and text:match("^كللهم (.*)$") and ChCheck(msg) then
+
+local txt = {string.match(text, "^(كللهم) (.*)$")}
+
+function TagAll(dp1,dp2)
+
+local text = "↯︙"..txt[2].." \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+
+i = 0
+
+for k, v in pairs(dp2.members_) do
+
+i = i + 1
+
+if database:get(ANGEL..'Save:UserName'..v.user_id_) then
+
+text = text..""..i.."~ : [@"..database:get(ANGEL..'Save:UserName'..v.user_id_).."]\n"
+
+else
+
+text = text..""..i.."~ : "..v.user_id_.."\n"
+
 end
 end
 send(msg.chat_id_,msg.id_,t)
