@@ -1,4 +1,4 @@
-serpent = dofile("./File_Libs/serpent.lua")
+ثعبان = ملف تعريف ( "./File_Libs/serpent.lua" )
 https = require("ssl.https")
 http = require("socket.http")
 JSON = dofile("./File_Libs/JSON.lua")
