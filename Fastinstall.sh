@@ -12,4 +12,4 @@ if [ "$1" = "ins" ]; then
 install
 fi
 chmod +x install.sh
-start.lua
+lua start.lua
